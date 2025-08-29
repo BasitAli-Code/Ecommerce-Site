@@ -21,12 +21,12 @@ const Header = () => {
       </div>
 
       <div className="hidden md:flex">
-        <a className="text-2xl ml-14 text-[#1a1a1a] hover:text-[#088178]" href="#">Home</a>
-        <a className="text-2xl ml-14 text-[#1a1a1a] hover:text-[#088178]" href="#">Shop</a>
-        <a className="text-2xl ml-14 text-[#1a1a1a] hover:text-[#088178]" href="#">Blog</a>
-        <a className="text-2xl ml-14 text-[#1a1a1a] hover:text-[#088178]" href="#">About</a>
-        <a className="text-2xl ml-14 text-[#1a1a1a] hover:text-[#088178]" href="#">Content</a>
-        <FaShoppingCart className='text-3xl ml-14 mt-2 mr-6' />
+        <a className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]" href="#">Home</a>
+        <a className="text-2xl ml-14 transition-all duration-500text-[#1a1a1a] hover:text-[#088178]" href="#">Shop</a>
+        <a className="text-2xl ml-14 transition-all duration-500text-[#1a1a1a] hover:text-[#088178]" href="#">Blog</a>
+        <a className="text-2xl ml-14 transition-all duration-500text-[#1a1a1a] hover:text-[#088178]" href="#">About</a>
+        <a className="text-2xl ml-14 transition-all duration-500text-[#1a1a1a] hover:text-[#088178]" href="#">Content</a>
+        <FaShoppingCart className='transition-all duration-500 text-[#1a1a1a] hover:text-[#088178] cursor-pointer text-3xl ml-14 mr-6' />
       </div>
 
       <div onClick = { changeMenuState } className='block md:hidden'>
