@@ -2,9 +2,10 @@ import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Features from './components/Features'
-import FeaturedProducts from './components/FeaturedProducts'
 import CallToAction from './components/CallToAction'
-import NewArrivals from './components/NewArrival'
+import ProductSection from './components/ProductSection'
+import { ProductImages , ArrivalImages } from './data/ProductsData.js'
+import ActionBanner from './components/ActionBanner.jsx'
 
 const App = () => {
   return (
@@ -12,9 +13,12 @@ const App = () => {
     <Header/>
     <Hero/>
     <Features/>
-    <FeaturedProducts/>
+    <ProductSection titleFirst="Featured" titleSecond= "Products"
+    images={ProductImages} /> 
     <CallToAction/>
-    <NewArrivals/>
+    <ProductSection titleFirst="New" titleSecond= "Arrivals"
+    images={ArrivalImages} />
+    <ActionBanner/>
     </>
   )
 }

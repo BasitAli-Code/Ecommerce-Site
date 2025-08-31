@@ -16,13 +16,13 @@ const ProductSection = ( {titleFirst , titleSecond , images} ) => {
         
         images.map((src, index) => (
 
-          <div key= {index} className="cursor-pointer h-[390px] p-3 w-[280px] shadow-[20px_20px_30px_rgba(0,0,0,0.04)] hover:shadow-[20px_20px_30px_rgba(0,0,0,0.08)] border border-[#cce7d0] transition-all duration-500 rounded-[5%] flex flex-col justify-between mb-7 hover:transform hover:scale-102">
+          <div key= {index} className="cursor-pointer h-[390px] p-3 w-[280px] shadow-[20px_20px_30px_rgba(0,0,0,0.04)] hover:shadow-[20px_20px_30px_rgba(0,0,0,0.09)] border border-[#cce7d0] transition-all duration-500 rounded-[5%] flex flex-col justify-between mb-7 hover:transform hover:scale-103">
 
             <img className="rounded-lg" src={src} alt={`image pic ${index + 1}`} />
 
             <div className="flex flex-col justify-between">
               <span className="mt-2 text-gray-500 text-[14px]">Adidas</span>
-              <p className="my-1 tracking-wider">Cartoon Astronaut T-Shirt</p>
+              <p className="transition-all duration-200 hover:text-[#088178] my-1 tracking-wider">Cartoon Astronaut T-Shirt</p>
               <div className="flex gap-1">
                 <FaStar className="text-[14px] text-yellow-400" />
                 <FaStar className="text-[14px] text-yellow-400" />
@@ -32,11 +32,11 @@ const ProductSection = ( {titleFirst , titleSecond , images} ) => {
 
               <div className="flex justify-between items-center">
                 <p className="text-[#088178] font-semibold">$78</p>
-                <FaShoppingCart className="text-2xl w-8 h-8 rounded-[40%] text-[#088178] p-2 bg-[#e8f6ea]" />
+                <FaShoppingCart className="text-2xl w-8 h-8 rounded-[40%] text-[#088178] p-2 bg-[#e8f6ea] hover:bg-[#088178] hover:text-[#e8f6ea] transition-all duration-300" />
               </div>
 
             </div>
-          </div>
+          </div>          
 
         ))
         
