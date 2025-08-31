@@ -1,24 +1,25 @@
 import React from 'react'
 import { FaShoppingCart, FaStar } from "react-icons/fa"
 
-const FeaturedProducts = () => {
+const NewArrivals = () => {
 
   const images = [
-    "src/assets/images/f1.jpg",
-    "src/assets/images/f2.jpg",
-    "src/assets/images/f3.jpg",
-    "src/assets/images/f4.jpg",
-    "src/assets/images/f5.jpg",
-    "src/assets/images/f6.jpg",
-    "src/assets/images/f7.jpg",
-    "src/assets/images/f8.jpg",
+    "src/assets/images/n1.jpg",
+    "src/assets/images/n2.jpg",
+    "src/assets/images/n3.jpg",
+    "src/assets/images/n4.jpg",
+    "src/assets/images/n5.jpg",
+    "src/assets/images/n6.jpg",
+    "src/assets/images/n7.jpg",
+    "src/assets/images/n8.jpg",
   ]
 
   return (
 
     <>
-      <h2 className="text-center text-5xl font-bold text-[#1a1a1a]">Featured 
-        <span className='text-red-400'> Products</span></h2>
+      <h2 className="text-center text-5xl font-bold text-[#1a1a1a]">
+        New <span className='text-red-400'>Arrivals</span>
+      </h2>
       <p className="my-4 text-center text-gray-600">Summer Collection New Modern Design</p>
 
       <div className="px-12 my-15 flex flex-wrap justify-evenly items-center gap-4">
@@ -60,4 +61,4 @@ const FeaturedProducts = () => {
   )
 }
 
-export default FeaturedProducts
+export default NewArrivals
