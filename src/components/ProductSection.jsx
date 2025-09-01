@@ -1,15 +1,18 @@
 import React from 'react'
 import { FaShoppingCart, FaStar } from "react-icons/fa"
 
-const ProductSection = ( {titleFirst , titleSecond , images} ) => {
+const ProductSection = ( {isTitlePresent , titleFirst , titleSecond , images} ) => {
 
   return (
 
     <>
-      <h2 className="text-center text-5xl font-bold text-[#1a1a1a]">{titleFirst} 
-        <span className='text-red-400'> {titleSecond}</span></h2>
-      <p className="my-4 text-center text-gray-600">Summer Collection New Modern Design</p>
-
+    { isTitlePresent &&
+      <>
+        <h2 className="text-center text-5xl font-bold text-[#1a1a1a]">{titleFirst} 
+          <span className='text-red-400'> {titleSecond}</span></h2>
+        <p className="my-4 text-center text-gray-600">Summer Collection New Modern Design</p>
+      </>
+    }
       <div className="px-12 my-15 flex flex-wrap justify-evenly items-center gap-4">
 
     {

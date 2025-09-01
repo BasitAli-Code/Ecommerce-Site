@@ -11,10 +11,10 @@ const LandingPage = () => {
     <>
        <Hero/>
         <Features/>
-        <ProductSection titleFirst="Featured" titleSecond= "Products"
+        <ProductSection isTitlePresent = {true} titleFirst="Featured" titleSecond= "Products"
         images={ProductImages} /> 
         <CallToAction/>
-        <ProductSection titleFirst="New" titleSecond= "Arrivals"
+        <ProductSection isTitlePresent = {true} titleFirst="New" titleSecond= "Arrivals"
         images={ArrivalImages} />
         <ActionBanner/>
     </>
