@@ -6,6 +6,7 @@ import CallToAction from './components/CallToAction'
 import ProductSection from './components/ProductSection'
 import { ProductImages , ArrivalImages } from './data/ProductsData.js'
 import ActionBanner from './components/ActionBanner.jsx'
+import NewsLetter from './components/NewsLetter.jsx'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
     <ProductSection titleFirst="New" titleSecond= "Arrivals"
     images={ArrivalImages} />
     <ActionBanner/>
+    <NewsLetter/>
     </>
   )
 }
