@@ -7,6 +7,7 @@ import ProductSection from './components/ProductSection'
 import { ProductImages , ArrivalImages } from './data/ProductsData.js'
 import ActionBanner from './components/ActionBanner.jsx'
 import NewsLetter from './components/NewsLetter.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
     images={ArrivalImages} />
     <ActionBanner/>
     <NewsLetter/>
+    <Footer/>
     </>
   )
 }

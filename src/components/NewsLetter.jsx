@@ -4,7 +4,7 @@ const NewsLetter = () => {
   return (
     <>
       
-      <div className="my-15 md:my-0 md:mb-40 w-full h-60 md:h-50 bg-no-repeat flex flex-wrap justify-evenly items-center bg-[#041e42]"
+      <div className="my-15 md:my-0 md:mb-25 w-full h-60 md:h-50 bg-no-repeat flex flex-wrap justify-evenly items-center bg-[#041e42]"
       style={{backgroundImage : "url('src/assets/images/b14.png')"}}>
 
             <div className="w-full md:w-[40%] flex flex-col items-center md:items-start">
@@ -18,7 +18,7 @@ const NewsLetter = () => {
             </div>
 
             <div className="w-full md:w-[40%] flex justify-center">
-                <input className="w-[60%] rounded-l-md bg-white text-[14px] px-5 py-3 tracking-wider outline-0" type="text" placeholder='Your email address' />
+                <input name='userEmail' className="w-[60%] rounded-l-md bg-white text-[14px] px-5 py-3 tracking-wider outline-0" type="text" placeholder='Your email address' />
                 <button className='cursor-pointer rounded-r-md text-[14px] px-5 py-3 text-white bg-[#088178]'>
                     Sign Up
                 </button>

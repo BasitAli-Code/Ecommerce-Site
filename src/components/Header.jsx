@@ -38,7 +38,7 @@ const Header = () => {
 
     { !isMenuSelected && 
       
-      <div className = " md:hidden absolute right-0 top-20 flex flex-col items-center justify-between py-10 bg-[#E3E6F3] h-[450px] w-[60vw] rounded-xl shadow-lg transition-all ease-in-out duration-500 z-40" >
+      <div className = "fixed md:hidden right-0 top-20 flex flex-col items-center justify-between py-10 bg-[#E3E6F3] h-[450px] w-[60vw] rounded-xl shadow-lg transition-all ease-in-out duration-500 z-40" >
 
         <a className="text-2xl text-[#1a1a1a] hover:text-[#088178]" href="#">Home</a>
         <a className="text-2xl mt-8 text-[#1a1a1a] hover:text-[#088178]" href="#">Shop</a>
