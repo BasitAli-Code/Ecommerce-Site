@@ -3,6 +3,7 @@ import { Routes , Route } from 'react-router-dom'
 import Header from './components/Header'
 import LandingPage from './pages/LandingPage.jsx'
 import ShopPage from './pages/ShopPage.jsx'
+import Blog from './pages/Blog.jsx'
 import NewsLetter from './components/NewsLetter.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -15,6 +16,7 @@ const App = () => {
 
         <Route path = '/' element = {<LandingPage/>} />
         <Route path = "/shop" element = {<ShopPage/>} />
+        <Route path = '/blog' element = {<Blog/>} />
         
       </Routes>
       <NewsLetter/>

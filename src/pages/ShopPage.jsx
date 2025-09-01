@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ProductSection from '../components/ProductSection.jsx'
+import TopImage from '../components/TopImage.jsx'
 import { ProductImages , ArrivalImages  } from '../data/ProductsData.js'
 
 const ShopPage = () => {
@@ -10,15 +11,8 @@ const ShopPage = () => {
   return (
     <>
 
-        <div className="w-full my-20 bg-cover gap-3 flex flex-col justify-center items-center h-80"
-        style={{ backgroundImage:"url('src/assets/images/b1.jpg')"}}>
-            <h1 className="tracking-wider text-white text-4xl font-bold">
-                #stayhome
-            </h1>
-            <p className='tracking-wide text-white'>
-                Save more with coupons & 70% off!
-            </p>
-        </div>
+        <TopImage imageSrc = 'src/assets/images/b1.jpg' mainHeading = "#stayhome"
+        subText = "Save more with coupons & 70% off!" /> 
 
         <ProductSection isTitlePresent = {false} titleFirst = "Tech"
         titleSecond = "Titans" images = {currentImages} />
