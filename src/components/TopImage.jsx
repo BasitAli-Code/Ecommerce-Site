@@ -6,7 +6,7 @@ const TopImage = ({ imageSrc , mainHeading , subText }) => {
       
          <div className="w-full my-20 bg-cover gap-3 flex flex-col justify-center items-center h-80"
         style={{ backgroundImage: `url(${imageSrc})`}}>
-            <h1 className="tracking-wider text-white text-4xl font-bold">
+            <h1 className="tracking-wider text-white text-4xl md:text-5xl font-bold">
                 {mainHeading}
             </h1>
             <p className='tracking-wide text-white'>
