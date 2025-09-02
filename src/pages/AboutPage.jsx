@@ -11,7 +11,7 @@ const AboutPage = () => {
     "src/assets/images/a3.png"
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(2);
 
   function previous() {
     setCurrentIndex((prev) => (prev - 1 + appImages.length) % appImages.length);

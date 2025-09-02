@@ -26,7 +26,7 @@ const Header = () => {
         <Link to="/shop" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">Shop</Link>
         <Link to="/blog" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">Blog</Link>
         <Link to="/about" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">About</Link>
-        <Link to="/content" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">Content</Link>
+        <Link to="/contactUs" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">Contact Us</Link>
         <FaShoppingCart className="transition-all duration-500 text-[#1a1a1a] hover:text-[#088178] cursor-pointer text-3xl ml-14 mr-6" />
       </div>
 
@@ -41,12 +41,12 @@ const Header = () => {
       
       <div className = "fixed md:hidden right-0 top-20 flex flex-col items-center justify-between py-10 bg-[#E3E6F3] h-[450px] w-[60vw] rounded-xl shadow-lg transition-all ease-in-out duration-500 z-40" >
 
-        <a className="text-2xl text-[#1a1a1a] hover:text-[#088178]" href="#">Home</a>
-        <a className="text-2xl mt-8 text-[#1a1a1a] hover:text-[#088178]" href="#">Shop</a>
-        <a className="text-2xl mt-8 text-[#1a1a1a] hover:text-[#088178]" href="#">Blog</a>
-        <a className="text-2xl mt-8 text-[#1a1a1a] hover:text-[#088178]" href="#">Cart</a>
-        <a className="text-2xl mt-8 text-[#1a1a1a] hover:text-[#088178]" href="#">About</a>
-        <a className="text-2xl mt-8 text-[#1a1a1a] hover:text-[#088178]" href="#">Content</a>
+        <Link to = "/" className="text-2xl text-[#1a1a1a] hover:text-[#088178]" >Home</Link>
+        <Link to = "/shop" className="text-2xl text-[#1a1a1a] hover:text-[#088178]" >Shop</Link>
+        <Link to = "/blog" className="text-2xl text-[#1a1a1a] hover:text-[#088178]" >Blog</Link>
+        <Link to = "/cart" className="text-2xl text-[#1a1a1a] hover:text-[#088178]" >Cart</Link>
+        <Link to = "/about" className="text-2xl text-[#1a1a1a] hover:text-[#088178]" >About</Link>
+        <Link to = "/contactUs" className="text-2xl text-[#1a1a1a] hover:text-[#088178]" >Contact Us</Link>
           
       </div>
 

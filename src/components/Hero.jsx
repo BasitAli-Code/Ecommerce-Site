@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+
+  const navigate = useNavigate();
+
   return (
 
 <>
@@ -17,7 +21,8 @@ const Hero = () => {
 
     <p className='text-gray-500 text-xl font-semibold absolute top-105 left-5 md:top-140 md:left-30'>Save more with coupons & 70% off</p>
 
-    <button className="cursor-pointer w-60 h-12.5 font-bold text-[#088178] text-xl absolute top-120 left-10 md:top-157 md:left-42" 
+    <button className="cursor-pointer w-60 h-12.5 font-bold text-[#088178] text-xl absolute top-120 left-10 md:top-157 md:left-42"
+    onClick = {()=> navigate('/shop')} 
     style ={{ backgroundImage: "url('src/assets/images/button.png')"}}>
       Shop Now
     </button>
