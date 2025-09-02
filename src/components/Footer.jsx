@@ -52,7 +52,7 @@ const Footer = () => {
           <h5 className="font-semibold mb-3">Install App</h5>
           <p className="text-gray-500">From App Store or Google Play</p>
           <div className="mx-auto flex justify-center md:justify-start">
-            <img className="my-3 border border-[#1a1a1a] rounded-md mr-3" src="src/assets/images/app.jpg" alt="App logo image" /> 
+            <img className="ml-2 md:ml-0 my-3 border border-[#1a1a1a] rounded-md mr-3" src="src/assets/images/app.jpg" alt="App logo image" /> 
             <img className="my-3 border border-[#1a1a1a] rounded-md mr-3" src="src/assets/images/play.jpg" alt="PlayStore logo image" />   
           </div>
           <p className="text-gray-500">Secure Payment Gateways</p>
