@@ -84,7 +84,7 @@ const ProductDetails = () => {
             Product Details
           </h3>
           <p className='text-gray-600 text-[16px] leading-relaxed'>
-            Crafted with quality materials and a modern design, this product offers lasting comfort, durability, and everyday style. Perfect for daily wear or special occasions, it’s designed to match your lifestyle with ease.
+            Crafted with quality materials and a modern design, this product offers lasting comfort, durability, and everyday style. Perfect for daily wear or special occasions, it is designed to match your lifestyle with ease.
           </p>
         </div>
       </div>

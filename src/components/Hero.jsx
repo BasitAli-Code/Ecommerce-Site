@@ -11,7 +11,7 @@ const Hero = () => {
 
  <div 
   className="overflow-hidden h-[100vh] w-full bg-cover bg-[center_top_25px]"
-  style={{ backgroundImage: "url('src/assets/images/hero4.png')" }}>
+  style={{ backgroundImage: "url('/images/hero4.png')" }}>
 
     <h3 className='text-gray-700 text-2xl md:text-3xl absolute top-70 left-5 md:top-90 md:left-30 font-semibold'>Trade-in-offer</h3>
     <h1 className='text-black text-4xl md:text-6xl absolute top-80 left-5 md:top-105 md:left-30 font-bold tracking-wider'>
@@ -23,7 +23,7 @@ const Hero = () => {
 
     <button className="cursor-pointer w-60 h-12.5 font-bold text-[#088178] text-xl absolute top-120 left-10 md:top-157 md:left-42"
     onClick = {()=> navigate('/shop')} 
-    style ={{ backgroundImage: "url('src/assets/images/button.png')"}}>
+    style ={{ backgroundImage: "url('/images/button.png')"}}>
       Shop Now
     </button>
 

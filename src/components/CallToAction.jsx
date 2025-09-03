@@ -9,7 +9,7 @@ const CallToAction = () => {
     <>
       
       <div className='mt-7 mb-25 w-full bg-cover h-85 bg-[center_top_-20px] flex flex-col items-center justify-center gap-6' 
-      style={{backgroundImage: "url('src/assets/images/b2.jpg')"}} >
+      style={{backgroundImage: "url('/images/b2.jpg')"}} >
 
         <p className=" text-white font-semibold text-xl">
             Repair Services

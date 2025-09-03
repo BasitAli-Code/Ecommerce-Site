@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mb-5 w-full gap-3 md:gap-0 h-auto flex flex-col items-center md:flex-row md:flex-wrap md:justify-evenly md:items-start">
         
         <div className="w-full h-auto md:w-auto md:h-full text-center md:text-left">
-          <img className="my-8 md:my-5 ml-[40%] md:mx-0" src="src/assets/images/logo.png" alt="Logo Image" />
+          <img className="my-8 md:my-5 ml-[40%] md:mx-0" src="/images/logo.png" alt="Logo Image" loading = 'lazy' />
           <h5 className="my-2 font-semibold">Contact</h5>
           <p className="my-1 text-gray-500">
             <span className="text-black font-semibold">Address: </span>
@@ -52,11 +52,11 @@ const Footer = () => {
           <h5 className="font-semibold mb-3">Install App</h5>
           <p className="text-gray-500">From App Store or Google Play</p>
           <div className="mx-auto flex justify-center md:justify-start">
-            <img className="ml-2 md:ml-0 my-3 border border-[#1a1a1a] rounded-md mr-3" src="src/assets/images/app.jpg" alt="App logo image" /> 
-            <img className="my-3 border border-[#1a1a1a] rounded-md mr-3" src="src/assets/images/play.jpg" alt="PlayStore logo image" />   
+            <img className="ml-2 md:ml-0 my-3 border border-[#1a1a1a] rounded-md mr-3" src="/images/app.jpg" alt="App logo image"  loading = 'lazy'/> 
+            <img className="my-3 border border-[#1a1a1a] rounded-md mr-3" src="/images/play.jpg" alt="PlayStore logo image" loading = 'lazy' />   
           </div>
           <p className="text-gray-500">Secure Payment Gateways</p>
-          <img className="my-2 mx-auto md:mx-0" src="src/assets/images/pay.png" alt="payment methods image" />
+          <img className="my-2 mx-auto md:mx-0" src="/images/pay.png" alt="payment methods image" loading = 'lazy' />
         </div>
       </div>
 

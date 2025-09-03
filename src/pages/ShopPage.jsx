@@ -11,7 +11,7 @@ const ShopPage = () => {
   return (
     <>
 
-        <TopImage imageSrc = 'src/assets/images/b1.jpg' mainHeading = "#stayhome"
+        <TopImage imageSrc = '/images/b1.jpg' mainHeading = "#stayhome"
         subText = "Save more with coupons & 70% off!" /> 
 
         <ProductSection isTitlePresent = {false} titleFirst = "Tech"

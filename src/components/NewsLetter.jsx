@@ -5,7 +5,7 @@ const NewsLetter = () => {
     <>
       
       <div className="my-15 md:my-0 md:mb-25 w-full h-60 md:h-50 bg-no-repeat flex flex-wrap justify-evenly items-center bg-[#041e42]"
-      style={{backgroundImage : "url('src/assets/images/b14.png')"}}>
+      style={{backgroundImage : "url('/images/b14.png')"}}>
 
             <div className="w-full md:w-[40%] flex flex-col items-center md:items-start">
                 <h3 className='mb-2 text-white text-2xl md:text-3xl font-semibold tracking-wide'>

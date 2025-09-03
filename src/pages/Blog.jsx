@@ -6,21 +6,21 @@ const Blog = () => {
   const blogImages = [
     {
       title : "Runway-Inspired Trends"  ,
-      imageSource : "src/assets/images/b4 (1).jpg" 
+      imageSource : "/images/b4 (1).jpg" 
     },
     {
       title : "Must Have Skater Girls Items" ,
-      imageSource : "src/assets/images/b3.jpg"
+      imageSource : "/images/b3.jpg"
     },
     {
       title : "AW20 Menswear Trends" ,
-      imageSource : "src/assets/images/b6.jpg"
+      imageSource : "/images/b6.jpg"
     }
   ];
 
   return (
     <>
-        <TopImage imageSrc = 'src/assets/images/b19.jpg' mainHeading = "#readmore"
+        <TopImage imageSrc = '/images/b19.jpg' mainHeading = "#readmore"
         subText = "Read all case studies about our products" /> 
 
         {blogImages.map((element, index) => (
@@ -32,6 +32,7 @@ const Blog = () => {
               className="rounded-md object-cover h-[260px] w-[90%] md:w-[30%]" 
               src={element.imageSource} 
               alt={`Blog image ${index + 1}`} 
+              loading='lazy'
             />
             
             <div className="w-[90%] md:w-[35%] text-center md:text-left">

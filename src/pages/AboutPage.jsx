@@ -6,9 +6,9 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 const AboutPage = () => {
     
   const appImages = [
-    "src/assets/images/a1.png",
-    "src/assets/images/a2.jpg",
-    "src/assets/images/a3.png"
+    "/images/a1.png",
+    "/images/a2.jpg",
+    "/images/a3.png"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(2);
@@ -24,7 +24,7 @@ const AboutPage = () => {
   return (
     <>
       <TopImage
-        imageSrc="src/assets/images/banner.png"
+        imageSrc="/images/banner.png"
         mainHeading="#KnowUs"
         subText="Learn and read more about us"
       />
@@ -32,8 +32,9 @@ const AboutPage = () => {
       <div className="my-15 flex w-full h-auto justify-center items-center flex-col md:flex-row gap-8">
         <img
           className="w-[90%] md:w-[35%] h-[330px] rounded-lg"
-          src="src/assets/images/a6.jpg"
+          src="/images/a6.jpg"
           alt="About us image"
+          loading='lazy'
         />
         <div className="w-[90%] md:w-[30%]">
           <h2 className="tracking-wide text-3xl md:text-4xl text-center md:text-start text-black font-semibold">

@@ -6,16 +6,16 @@ import TopImage from '../components/TopImage'
 const ContactPage = () => {
 
   const profileImages = [
-    "src/assets/images/1.png",
-    "src/assets/images/2.png",
-    "src/assets/images/3.png"
+    "/images/1.png",
+    "/images/2.png",
+    "/images/3.png"
   ]
 
   return (
     <>
 
       <TopImage
-        imageSrc="src/assets/images/banner.png"
+        imageSrc="/images/banner.png"
         mainHeading="#Let's_talk"
         subText="Leave a message. We love to hear from you"
       />

@@ -18,7 +18,7 @@ const Header = () => {
     <div className='bg-[#E3E6F3] drop-shadow-lg px-6 md:px-18 flex justify-between items-center w-full h-20 fixed top-0 left-0 z-50'>
 
       <div className="">
-        <img src="src\assets\images\logo.png" alt="logo image" />  
+        <img src="/images/logo.png" alt="logo image" loading = 'lazy'/>  
       </div>
 
       <div className="hidden md:flex">

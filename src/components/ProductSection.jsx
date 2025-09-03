@@ -28,7 +28,7 @@ const ProductSection = ( {isTitlePresent , titleFirst , titleSecond , images} ) 
 
           <div className="cursor-pointer h-[390px] p-3 w-[280px] shadow-[20px_20px_30px_rgba(0,0,0,0.04)] hover:shadow-[20px_20px_30px_rgba(0,0,0,0.09)] border border-[#cce7d0] transition-all duration-500 rounded-[5%] flex flex-col justify-between mb-7 hover:transform hover:scale-103">
 
-            <img className="rounded-lg" src={element.src} alt={`image pic ${index + 1}`} />
+            <img className="rounded-lg" src={element.src} alt={`image pic ${index + 1}`} loading='lazy' />
 
             <div className="flex flex-col justify-between">
               <span className="mt-2 text-gray-500 text-[14px]">Adidas</span>
