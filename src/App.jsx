@@ -6,6 +6,7 @@ import ShopPage from './pages/ShopPage.jsx'
 import AboutPage from './pages/AboutPage.jsx'
 import Blog from './pages/Blog.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import ProductDetails from './pages/ProductDetails.jsx'
 import NewsLetter from './components/NewsLetter.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route path = '/blog' element = {<Blog/>} />
         <Route path = '/about' element = {<AboutPage/>} />
         <Route path = '/contactUs' element = {<ContactPage/>} />
+        <Route path = '/product-details/:id' element = {<ProductDetails/>} />
         
       </Routes>
       <NewsLetter/>
