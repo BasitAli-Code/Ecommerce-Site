@@ -1,34 +1,37 @@
-import React from 'react'
-import { Routes , Route } from 'react-router-dom'
+import React, { Suspense, lazy } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import LandingPage from './pages/LandingPage.jsx'
-import ShopPage from './pages/ShopPage.jsx'
-import AboutPage from './pages/AboutPage.jsx'
-import Blog from './pages/Blog.jsx'
-import ContactPage from './pages/ContactPage.jsx'
-import ProductDetails from './pages/ProductDetails.jsx'
 import NewsLetter from './components/NewsLetter.jsx'
 import Footer from './components/Footer.jsx'
+
+const LandingPage = lazy(() => import('./pages/LandingPage.jsx'))
+const ShopPage = lazy(() => import('./pages/ShopPage.jsx'))
+const AboutPage = lazy(() => import('./pages/AboutPage.jsx'))
+const Blog = lazy(() => import('./pages/Blog.jsx'))
+const ContactPage = lazy(() => import('./pages/ContactPage.jsx'))
+const CartPage = lazy(() => import('./pages/CartPage.jsx'))
+const ProductDetails = lazy(() => import('./pages/ProductDetails.jsx'))
 
 const App = () => {
   return (
     <>
+      <Header />
       
-      <Header/>
-      <Routes>
-
-        <Route path = '/' element = {<LandingPage/>} />
-        <Route path = "/shop" element = {<ShopPage/>} />
-        <Route path = '/blog' element = {<Blog/>} />
-        <Route path = '/about' element = {<AboutPage/>} />
-        <Route path = '/contactUs' element = {<ContactPage/>} />
-        <Route path = '/product-details/:id' element = {<ProductDetails/>} />
-        
-      </Routes>
-      <NewsLetter/>
-      <Footer/>
+      <Suspense fallback={<div className="text-center p-5">Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contactUs" element={<ContactPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/product-details/:id" element={<ProductDetails />} />
+        </Routes>
+      </Suspense>
       
-      </>
+      <NewsLetter />
+      <Footer />
+    </>
   )
 }
 

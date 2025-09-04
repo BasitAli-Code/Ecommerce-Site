@@ -27,7 +27,9 @@ const Header = () => {
         <Link to="/blog" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">Blog</Link>
         <Link to="/about" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">About</Link>
         <Link to="/contactUs" className="text-2xl ml-14 transition-all duration-500 text-[#1a1a1a] hover:text-[#088178]">Contact Us</Link>
-        <FaShoppingCart className="transition-all duration-500 text-[#1a1a1a] hover:text-[#088178] cursor-pointer text-3xl ml-14 mr-6" />
+        <Link to = "/cart" >
+          <FaShoppingCart className="transition-all duration-500 text-[#1a1a1a] hover:text-[#088178] cursor-pointer text-3xl ml-14 mr-6" />
+        </Link>
       </div>
 
       <div onClick = { changeMenuState } className='block md:hidden'>

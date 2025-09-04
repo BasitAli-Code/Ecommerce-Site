@@ -8,7 +8,7 @@ const ProductDetails = () => {
 
   const [size , setSize] = useState("medium");
   const { id } = useParams();
-  const { cart , setCart , addToCart , removeFromCart } = useContext(CartContext);
+  const { addToCart , removeFromCart } = useContext(CartContext);
   const [ isActive , setIsActive] = useState(false);
   const [quantity, setQuantity] = useState(1);
 
@@ -75,7 +75,6 @@ const ProductDetails = () => {
               ()=>{
                 isActive ? removeFromCart(product) : addToCart({...product , size , quantity });
                 setIsActive(!isActive);
-                console.log(cart);
               }
             }>
               { isActive ? "Remove from Cart" : "Add to Cart"}
