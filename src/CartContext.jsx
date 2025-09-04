@@ -1,0 +1,51 @@
+import { createContext, useState } from "react";
+
+export const CartContext = createContext();
+
+export function CartProvider({ children }) {
+
+  const [cart, setCart] = useState([]);
+  
+  function addToCart(product) {
+  const existing = cart.find(
+    (item) => item.id === product.id && item.size === product.size
+  );
+
+  if (existing) {
+    const updatedCart = cart.map((item) =>
+      item.id === product.id && item.size === product.size
+        ? { ...item, quantity: item.quantity + product.quantity }
+        : item
+    );
+    setCart(updatedCart);
+  } else {
+    setCart([...cart, product]);
+  }
+}
+
+  function removeFromCart(product) {
+    setCart(cart.filter((item) => item.id !== product.id));
+  }
+
+  function increaseQuantity(product) {
+    const updatedCart = cart.map((item) =>
+      item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    setCart(updatedCart);
+  }
+
+  function decreaseQuantity(product) {
+    const updatedCart = cart
+      .map((item) =>
+        item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
+      )
+      .filter((item) => item.quantity > 0);
+    setCart(updatedCart);
+  }
+
+  return (
+    <CartContext.Provider value={{ cart, setCart, addToCart, removeFromCart, increaseQuantity, decreaseQuantity }}>
+      {children}
+    </CartContext.Provider>
+  );
+}

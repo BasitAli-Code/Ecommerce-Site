@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import TopImage from '../components/TopImage'
 import { useParams } from 'react-router-dom';
 import { ProductImages , ArrivalImages } from '../data/ProductsData';
+import { CartContext } from '../CartContext';
 
 const ProductDetails = () => {
 
-  const [size , setSize] = useState("");
+  const [size , setSize] = useState("medium");
   const { id } = useParams();
+  const { cart , setCart , addToCart , removeFromCart } = useContext(CartContext);
+  const [ isActive , setIsActive] = useState(false);
+  const [quantity, setQuantity] = useState(1);
 
   let product = ProductImages.find((p)=> p.id === Number(id));
   if (!product) {
@@ -66,8 +70,15 @@ const ProductDetails = () => {
               <option value="xl-large">XL-Large</option>
             </select>
 
-            <button className="transition-all duration-300 bg-[#088178] text-white cursor-pointer rounded-md shadow-md px-6 py-2 hover:bg-[#0a9c91] hover:shadow-lg">
-              Add to Cart
+            <button className={`transition-all duration-300 cursor-pointer rounded-md shadow-md px-6 py-2 text-white ${isActive ? "bg-red-500" : "bg-[#088178]" }`}
+            onClick={
+              ()=>{
+                isActive ? removeFromCart(product) : addToCart({...product , size , quantity });
+                setIsActive(!isActive);
+                console.log(cart);
+              }
+            }>
+              { isActive ? "Remove from Cart" : "Add to Cart"}
             </button>
           </div>
 
@@ -75,9 +86,9 @@ const ProductDetails = () => {
             type="number" 
             name="product-quantity" 
             className="outline-none w-24 border border-gray-400 rounded-md py-1 px-2 mt-3"
-            min="1"
-            max="100" 
-            defaultValue="1"
+            min = "1"
+            value = {quantity}
+            onChange={(e)=> setQuantity(Number(e.target.value))}
           />
 
           <h3 className='text-2xl text-black font-semibold mt-6'>
