@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Features = () => {
   const features = [
@@ -14,11 +14,15 @@ const Features = () => {
     <>
       <div className="my-20 flex flex-wrap justify-evenly items-center">
         {features.map((feature, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="mb-5 border-1 border-[#cce7d0] rounded-lg h-45 w-40 flex justify-evenly items-center flex-col shadow-lg"
           >
-            <img src={feature.src} alt={`Feature image ${index + 1}`} loading="lazy" />
+            <img
+              src={feature.src}
+              alt={`Feature image ${index + 1}`}
+              loading="lazy"
+            />
             <button className={`rounded w-[70%] text-[#088178] ${feature.bg}`}>
               {feature.text}
             </button>
@@ -27,6 +31,6 @@ const Features = () => {
       </div>
     </>
   );
-}
+};
 
 export default Features;

@@ -1,15 +1,10 @@
-import React, { useState } from 'react'
-import TopImage from '../components/TopImage'
-import Features from '../components/Features'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import React, { useState } from "react";
+import TopImage from "../components/TopImage";
+import Features from "../components/Features";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const AboutPage = () => {
-    
-  const appImages = [
-    "/images/a1.png",
-    "/images/a2.jpg",
-    "/images/a3.png"
-  ];
+  const appImages = ["/images/a1.png", "/images/a2.jpg", "/images/a3.png"];
 
   const [currentIndex, setCurrentIndex] = useState(2);
 
@@ -34,15 +29,18 @@ const AboutPage = () => {
           className="w-[90%] md:w-[35%] h-[330px] rounded-lg"
           src="/images/a6.jpg"
           alt="About us image"
-          loading='lazy'
+          loading="lazy"
         />
         <div className="w-[90%] md:w-[30%]">
           <h2 className="tracking-wide text-3xl md:text-4xl text-center md:text-start text-black font-semibold">
             Who We Are ?
           </h2>
           <p className="text-center md:text-start my-4 text-gray-500 text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eum quas quibusdam suscipit. Aperiam eveniet, quas non voluptate quasi doloribus vero culpa et, a neque officiis omnis, reprehenderit doloremque ex!
-            Fugit veritatis, itaque sint nobis ad molestias nihil hic odio quasi illum sapiente, explicabo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            eum quas quibusdam suscipit. Aperiam eveniet, quas non voluptate
+            quasi doloribus vero culpa et, a neque officiis omnis, reprehenderit
+            doloremque ex! Fugit veritatis, itaque sint nobis ad molestias nihil
+            hic odio quasi illum sapiente, explicabo.
           </p>
         </div>
       </div>
@@ -54,7 +52,11 @@ const AboutPage = () => {
 
         <div
           className="px-2 object-cover w-[90%] justify-between md:w-[40%] h-[450px] rounded-lg shadow-lg flex items-center"
-          style={{ backgroundImage: `url(${appImages[currentIndex]})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          style={{
+            backgroundImage: `url(${appImages[currentIndex]})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
           <button onClick={previous}>
             <FaArrowLeft className="text-3xl text-red-400 cursor-pointer font-bold" />
@@ -68,7 +70,7 @@ const AboutPage = () => {
 
       <Features />
     </>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

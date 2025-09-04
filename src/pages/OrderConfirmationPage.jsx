@@ -7,7 +7,7 @@ const OrderConfirmationPage = () => {
     <div className="min-h-screen flex items-center justify-center bg-[#088178] p-6">
       <div className="bg-white rounded-2xl shadow-xl max-w-md w-full p-8 text-center">
         <AiOutlineCheckCircle className="mx-auto text-[#088178]" size={64} />
-        
+
         <h1 className="text-2xl font-bold mt-4 text-gray-800">
           Order Confirmed!
         </h1>
