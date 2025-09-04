@@ -7,13 +7,12 @@ export function CartProvider({ children }) {
 
   function addToCart(product) {
     const existing = cart.find(
-      (item) => item.id === product.id && item.size === product.size
+      (item) => item.id === product.id
     );
 
     if (existing) {
       const updatedCart = cart.map((item) =>
-        item.id === product.id && item.size === product.size
-          ? { ...item, quantity: item.quantity + product.quantity }
+        item.id === product.id? { ...item, quantity: item.quantity + product.quantity }
           : item
       );
       setCart(updatedCart);

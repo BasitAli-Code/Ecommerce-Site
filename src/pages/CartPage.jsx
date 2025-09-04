@@ -7,6 +7,7 @@ import TopImage from "../components/TopImage";
 const CartPage = () => {
   const {
     cart,
+    setCart,
     increaseQuantity,
     decreaseQuantity,
     addToCart,
@@ -28,6 +29,7 @@ const CartPage = () => {
       return;
     }
     navigate("/order-confirmation");
+    setCart([]);
   }
 
   return (
