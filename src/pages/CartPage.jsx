@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FaPlus, FaMinus, FaTimes } from "react-icons/fa";
 import { CartContext } from '../CartContext';
 import TopImage from '../components/TopImage'
@@ -10,6 +11,17 @@ const CartPage = () => {
   const totalPrice = cart.reduce((acc , product)=> acc + ( product.quantity * product.price) , 0 );
 
   const shippingCost = Math.floor(Math.random() * 21) + 10;
+
+  const navigate = useNavigate();
+
+  
+  function handleOrderConfirmation(){
+    if(cart.length === 0){
+      alert("Your cart is empty. Please add items before confirming");
+      return;
+    }
+    navigate('/order-confirmation');
+  }
 
   return (
    <>
@@ -102,7 +114,7 @@ const CartPage = () => {
         </div>
          
         <button className="transition-all my-1 md:w-[40%] w-[70%] duration-300 bg-[#088178] text-[#fff] cursor-pointer rounded-md shadow-lg px-6 py-3"
-        >
+        onClick = {handleOrderConfirmation}>
             Confirm Order
         </button>
 

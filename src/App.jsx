@@ -11,6 +11,7 @@ const Blog = lazy(() => import('./pages/Blog.jsx'))
 const ContactPage = lazy(() => import('./pages/ContactPage.jsx'))
 const CartPage = lazy(() => import('./pages/CartPage.jsx'))
 const ProductDetails = lazy(() => import('./pages/ProductDetails.jsx'))
+const OrderConfirmationPage = lazy(() => import('./pages/OrderConfirmationPage.jsx'))
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contactUs" element={<ContactPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path = "/order-confirmation" element = {<OrderConfirmationPage/>} />
           <Route path="/product-details/:id" element={<ProductDetails />} />
         </Routes>
       </Suspense>
