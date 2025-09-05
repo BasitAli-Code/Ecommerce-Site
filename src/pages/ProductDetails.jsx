@@ -36,7 +36,7 @@ const ProductDetails = () => {
 
       <div className="my-20 flex flex-col md:flex-row justify-center md:items-start items-center w-full h-auto gap-8 px-4 md:px-12">
         <img
-          className="w-[85%] md:w-[25%] h-[400px] rounded-lg"
+          className="w-[85%] md:w-[25%] h-[350px] md:h-[400px] rounded-lg"
           src={product.src}
           alt={product.name}
         />
