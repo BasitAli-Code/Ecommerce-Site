@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import NewsLetter from "./components/NewsLetter.jsx";
 import Footer from "./components/Footer.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 const LandingPage = lazy(() => import("./pages/LandingPage.jsx"));
 const ShopPage = lazy(() => import("./pages/ShopPage.jsx"));
@@ -21,6 +22,7 @@ const App = () => {
       <Header />
 
       <Suspense fallback={<div className="text-center p-5">Loading...</div>}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/shop" element={<ShopPage />} />
